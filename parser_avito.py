@@ -8,6 +8,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 import undetected_chromedriver as uc
 from selenium.common.exceptions import TimeoutException
 import csv
+import requests
+from bs4 import BeautifulSoup
 options = uc.ChromeOptions()
 with open('settings.txt', 'r', encoding='utf-8') as f:
     user = f.readline()
